@@ -1,0 +1,33 @@
+; environment
+[core]
+        editor = vim
+        autocrlf = input
+        excludesfile = /home/zack/.gitignore
+        #pager = less -r
+[color]
+        ui = true
+[diff]
+        tool = vimdiff
+[difftool]
+        prompt = false
+[merge]
+        tool = vimdiff
+[mergetool]
+        keepBackup = false
+        prompt = false
+
+; customizations
+[alias]
+        co = checkout
+        ci = commit
+        st = status
+        df = diff
+        br = branch
+        us = reset HEAD
+        um = checkout --
+        mg = merge --squash
+        lg = log --graph --pretty=format:\"%C(yellow)%h%C(reset)%C(magenta)%d %C(reset)%s %C(cyan)%an%C(reset) %ar\"
+        dt = difftool
+        mt = mergetool
+[push]
+	default = simple

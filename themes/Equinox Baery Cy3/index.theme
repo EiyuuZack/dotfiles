@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.1
+Encoding=UTF-8
+Name=Equinox Baery Cy3
+Type=X-GNOME-Metatheme
+Comment=Equinox Baery Cy3: based on Equinox Variance, elementary, and Equinox Evolution Squared.
+Name[en_US]=Equinox Baery Cy3
+
+[X-GNOME-Metatheme]
+GtkTheme=Equinox Baery Cy3
+MetacityTheme=Equinox Evolution Squared
+IconTheme=elementary-monochrome
+CursorTheme=DMZ-White

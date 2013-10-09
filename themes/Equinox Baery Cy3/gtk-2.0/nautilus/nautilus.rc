@@ -1,0 +1,362 @@
+style "nautilus-sidebar"
+{	
+	font_name		= "Regular"	# Font style
+
+	bg[NORMAL]		= @selected_bg_color	# ???
+	bg[PRELIGHT]		= @selected_bg_color	# ???
+	
+	fg[NORMAL]		= @fg_color		# Expander border color
+	fg[PRELIGHT]		= @base_color		# ???
+
+	base[ACTIVE]		= shade (0.90, @bg_color)	# Selected color
+	base[SELECTED]		= shade (0.90, @bg_color)	# Selected color
+	base[NORMAL]		= @text_color			# Expander background color
+	
+	text[NORMAL]		= @text_color	# Text color
+	text[ACTIVE]		= @text_color	# Text color
+	text[SELECTED]		= @text_color	# Text color
+	
+	xthickness		= 0	# For Thunar
+	ythickness		= 0	# For Thunar
+	
+	GtkWidget::wide_separator		  	= 1		# ???
+	GtkWidget::separator_width		  	= 1		# ???
+	GtkWidget::separator_height		  	= 0		# ???
+	GtkWidget::focus_line_width		  	= 1		# Adds spacing between bookmarks/places
+	GtkWidget::draw_border				= {0,0,0,0}	# ???
+	
+	GtkTreeView::vertical_separator     		= 4		# Padding between rows
+	GtkTreeView::horizontal_separator   		= 12		# Padding to the left
+	GtkTreeView::indent-expanders			= 1		# 1 means TRUE
+	GtkTreeView::expander-size			= 8		# Expander size
+	GtkTreeView::even-row-color			= @bg_color			# Sidebar background color (even row)
+	GtkTreeView::odd-row-color			= shade(0.95, @bg_color)	# Sidebar background color (odd row)
+	
+	GtkPaned::handle_size             		= 1		# ???
+	GtkExpander::expander_spacing			= 16		# ???
+	GtkButton::image_spacing			= 4		# ???
+	GtkWidget::focus-padding			= 0		# Takes away space between Trash and Bookmarks
+}
+
+style "nautilus-sidebar-title"
+{
+	fg[NORMAL]	= shade (1.60, @text_color)
+	fg[PRELIGHT]    = shade (1.25, @text_color)
+	bg[PRELIGHT]   	= @bg_color
+
+	stock["gtk-close"] = {{ "images/blank.png", *, *, * }} # Get rid of the close icon
+
+	font_name	= "Regular"
+
+	GtkExpander::expander_spacing             = 0
+	GtkArrow::arrow-scaling                   = 0.6 # allowed: 0.1 ~ 1.0 (0.6 is an approximation to get 9 by 9 pixels arrow)
+	GtkButton::image-spacing                  = 0
+	GtkButton::inner-border                   = {0, 0, 4, 0}
+	GtkButton::child-displacement-x           = 0
+	GtkButton::child-displacement-y           = 0
+	
+	# with this we'd get a tight button, with 0 pixels frame so the height matches the label plus 1 pixel (8 + 1 = 9)
+	GtkButton::default-border                 = { 0, 0, 0, 0 }
+	
+	xthickness                                = 2
+	ythickness                                = 1
+	
+	engine "pixmap" {
+		image
+		{
+			function	= SHADOW
+		}
+		
+		image
+		{
+			function	= ARROW
+			arrow_direction = DOWN
+			border		= {0,0,0,0}
+			stretch		= TRUE
+			recolorable	= TRUE
+			file		= "images/arrow.png" # this should be 9x9 pixels, arrow down
+		}
+	}
+}
+
+style "minimal-scrollbar"
+{
+	# This style was taken from:
+	# Theme:	elementary GTK 
+	# Author:	Daniel Foré <Daniel.P.Fore@gmail.com>
+	# License:	GPL
+
+	GtkRange::slider-width	= 9
+    	bg[ACTIVE]   		= @bg_color # Slider background
+
+    engine "pixmap" 
+    {
+
+ ######### Sliders ############
+
+        image 
+        {
+	    function        = SLIDER
+	    recolorable     = TRUE
+	    state           = NORMAL
+	    file            = "images/minimal-scrollbar/scrollbar-horiz.png"
+	    border          = { 15, 15, 3, 3 }
+	    stretch         = TRUE
+	    orientation     = HORIZONTAL
+        }
+
+        image 
+        {
+	    function        = SLIDER
+	    recolorable     = TRUE
+	    state           = ACTIVE
+	    file            = "images/minimal-scrollbar/scrollbar-horiz.png"
+	    border          = { 15, 15, 3, 3 }
+	    stretch         = TRUE
+	    orientation     = HORIZONTAL
+        }
+
+        image 
+        {
+	    function        = SLIDER
+	    recolorable     = TRUE
+	    state           = PRELIGHT
+	    file            = "images/minimal-scrollbar/scrollbar-horiz-prelight.png"
+	    border          = { 15, 15, 3, 3 }
+	    stretch         = TRUE
+	    orientation     = HORIZONTAL
+        }
+
+        image 
+        {
+	    function        = SLIDER
+	    recolorable     = TRUE
+	    state           = INSENSITIVE
+	    file            = "images/minimal-scrollbar/scrollbar-horiz-insensitive.png"
+	    border          = { 15, 15, 3, 3 }
+	    stretch         = TRUE
+	    orientation     = HORIZONTAL
+        }
+
+        image 
+        {
+	    function        = SLIDER
+	    recolorable     = TRUE
+	    state           = NORMAL
+	    file            = "images/minimal-scrollbar/scrollbar-vert.png"
+	    border          = { 3, 3, 15, 15 }
+	    stretch         = TRUE
+	    orientation     = VERTICAL
+        }
+
+        image 
+        {
+	    function        = SLIDER
+	    recolorable     = TRUE
+	    state           = ACTIVE
+	    file            = "images/minimal-scrollbar/scrollbar-vert.png"
+	    border          = { 3, 3, 15, 15 }
+	    stretch         = TRUE
+	    orientation     = VERTICAL
+        }
+
+        image 
+        {
+	    function        = SLIDER
+	    recolorable     = TRUE
+	    state           = PRELIGHT
+	    file            = "images/minimal-scrollbar/scrollbar-vert-prelight.png"
+	    border          = { 3, 3, 15, 15 }
+	    stretch         = TRUE
+	    orientation     = VERTICAL
+        }
+
+        image 
+        {
+	    function        = SLIDER
+	    recolorable     = TRUE
+	    state           = INSENSITIVE
+	    file            = "images/minimal-scrollbar/scrollbar-vert-insensitive.png"
+	    border          = { 3, 3, 15, 15 }
+	    stretch         = TRUE
+	    orientation     = VERTICAL
+        }
+
+ ######### Steppers ############
+
+	image 
+	{
+	function	    = STEPPER
+	recolorable	    = TRUE
+	state               = NORMAL
+	file		    = "images/minimal-scrollbar/stepper-up.png"
+	stretch		    = TRUE
+	arrow_direction	    = UP
+	}
+
+	image 
+	{
+	function	    = STEPPER
+	recolorable	    = TRUE
+	state               = ACTIVE
+	file		    = "images/minimal-scrollbar/stepper-up.png"
+	stretch		    = TRUE
+	arrow_direction	    = UP
+	}
+
+	image 
+	{
+	function	    = STEPPER
+	recolorable	    = TRUE
+	state               = PRELIGHT
+	file		    = "images/minimal-scrollbar/stepper-up.png"
+	stretch		    = TRUE
+	arrow_direction	    = UP
+	}
+
+	image 
+	{
+	function	    = STEPPER
+	recolorable	    = TRUE
+	state               = INSENSITIVE
+	file		    = "images/minimal-scrollbar/stepper-up-insensitive.png"
+	stretch		    = TRUE
+	arrow_direction	    = UP
+	}
+
+	image 
+	{
+	function	    = STEPPER
+	recolorable	    = TRUE
+	state               = NORMAL
+	file		    = "images/minimal-scrollbar/stepper-down.png"
+	stretch		    = TRUE
+	arrow_direction	    = DOWN
+	}
+
+	image 
+	{
+	function	    = STEPPER
+	recolorable	    = TRUE
+	state               = ACTIVE
+	file		    = "images/minimal-scrollbar/stepper-down.png"
+	stretch		    = TRUE
+	arrow_direction	    = DOWN
+	}
+
+	image 
+	{
+	function	    = STEPPER
+	recolorable	    = TRUE
+	state               = PRELIGHT
+	file		    = "images/minimal-scrollbar/stepper-down.png"
+	stretch		    = TRUE
+	arrow_direction	    = DOWN
+	}
+
+	image 
+	{
+	function	    = STEPPER
+	recolorable	    = TRUE
+	state               = INSENSITIVE
+	file		    = "images/minimal-scrollbar/stepper-down-insensitive.png"
+	stretch		    = TRUE
+	arrow_direction	    = DOWN
+	}
+
+	image 
+	{
+	function	    = STEPPER
+	recolorable	    = TRUE
+	state               = NORMAL
+	file		    = "images/minimal-scrollbar/stepper-left.png"
+	stretch		    = TRUE
+	arrow_direction	    = LEFT
+	}
+
+	image 
+	{
+	function	    = STEPPER
+	recolorable	    = TRUE
+	state               = ACTIVE
+	file		    = "images/minimal-scrollbar/stepper-left.png"
+	stretch		    = TRUE
+	arrow_direction	    = LEFT
+	}
+
+	image 
+	{
+	function	    = STEPPER
+	recolorable	    = TRUE
+	state               = PRELIGHT
+	file		    = "images/minimal-scrollbar/stepper-left.png"
+	stretch		    = TRUE
+	arrow_direction	    = LEFT
+	}
+
+	image 
+	{
+	function	    = STEPPER
+	recolorable	    = TRUE
+	state               = INSENSITIVE
+	file		    = "images/minimal-scrollbar/stepper-left-insensitive.png"
+	stretch		    = TRUE
+	arrow_direction	    = LEFT
+	}
+
+	image 
+	{
+	function	    = STEPPER
+	recolorable	    = TRUE
+	state               = NORMAL
+	file		    = "images/minimal-scrollbar/stepper-right.png"
+	stretch		    = TRUE
+	arrow_direction	    = RIGHT
+	}
+
+	image 
+	{
+	function	    = STEPPER
+	recolorable	    = TRUE
+	state               = ACTIVE
+	file		    = "images/minimal-scrollbar/stepper-right.png"
+	stretch		    = TRUE
+	arrow_direction	    = RIGHT
+	}
+
+	image 
+	{
+	function	    = STEPPER
+	recolorable	    = TRUE
+	state               = PRELIGHT
+	file		    = "images/minimal-scrollbar/stepper-right.png"
+	stretch		    = TRUE
+	arrow_direction	    = RIGHT
+	}
+
+	image 
+	{
+	function	    = STEPPER
+	recolorable	    = TRUE
+	state               = INSENSITIVE
+	file		    = "images/minimal-scrollbar/stepper-right-insensitive.png"
+	stretch		    = TRUE
+	arrow_direction	    = RIGHT
+	}
+
+    }
+}
+
+style "nautilus-extra-view" {
+	bg[NORMAL] = mix (0.4, @bg_color, @base_color)
+}
+
+
+widget_class "*NautilusSidePane.*"			style "nautilus-sidebar-title"
+widget_class "*Nautilus*Places*Sidebar*"		style "nautilus-sidebar"
+widget_class "*Nautilus*Side*.GtkWidget"		style "nautilus-sidebar"
+widget_class "*Nautilus*Side*Title*"            	style "nautilus-sidebar-title"
+widget_class "*Nautilus*Scrollbar"   			style "theme-scrollbar"
+widget_class "*NautilusSidePane.*Scrollbar"   		style:highest "minimal-scrollbar"
+widget "*.nautilus-extra-view-widget" 			style:highest "nautilus-extra-view"
+

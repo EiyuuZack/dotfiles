@@ -1,0 +1,27 @@
+# Workaround to make acpid work properly
+# as of nov 14th 'restart' is having problems
+# so for now stop, wait and start
+#( sleep 10 ; sudo /etc/rc.d/acpid stop ; sleep 1 ; sudo /etc/rc.d/acpid start ) &
+#( sleep 10 ; sudo /etc/rc.d/acpid restart ) &
+
+# Set proper resolution on laptop LCD (LVDS1) if VGA is connected
+#(xrandr | grep -q "VGA1 connected" && xrandr --output LVDS1 --auto) &
+
+# Set DPMS values if running on battery
+#( grep -q 0 /sys/class/power_supply/*/online && xset s off dpms 120 120 120 ) &
+
+# Set keyboard repeat rate back to tty speed
+xset r rate 200 25 &
+
+# Start the urxvt daemon forked to background
+# urxvtd -q -f -o
+
+# Ready up thunar
+thunar --daemon &
+
+# Set the background image (on all displays, independently)
+imlibsetroot -x e -s f $HOME/.background.png
+
+# Start programs
+#$HOME/scripts/iconky.sh > /dev/null 2>&1 &
+#tint2 &

@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# interactive prompt which shows shell jobs and last command status
+# shows git branch in git directories for git users
+# for color codes check .bashrc
+function prompt() {
+        local st="$?" stclr="$bfggrn"
+        (($st)) && stclr="$bfgred" st="\[$fgwht\][\[$stclr\]$st\[$fgwht\]]" || st=""
+
+        local jbs=`jobs | wc -l` jbsclr="$bfgpur"
+        (($jbs)) && jbs="\[$fgwht\][\[$jbsclr\]$jbs\[$fgwht\]]" || jbs=""
+
+        which git > /dev/null 2>&1 && . /usr/share/git/git-prompt.sh && git="\[$fgpur\]$(__git_ps1 %s)"
+
+        PS1="\n┌─$st$jbs\[$bfgblu\]\h \[$bfgylw\]\W $git\[$normal\]\n└─\[$stclr\]╼ \[$normal\]"
+        PS2=" \[$fgcyn\]> \[$normal\]"
+        PS3=" \[$bfgcyn\]> \[$normal\]"
+        PS4="[$LINENO]+"
+}
+
+# other prompts
+#PS1='[\u@\h \W]\$ '
+#PS1='\n\[\033[43m\]\[\033[1;37m\]\u\[\033[0m\] \[\033[46m\]\[\033[1;37m\]\w\[\033[0m\]\n> '
+#PS1='\n\[\033[1;36m\]\u \[\033[46m\]\[\033[1;37m\]\w\[\033[0m\]\n> '
+#PS1='\n\[\033[1;31m\]\u \[\033[41m\]\[\033[1;37m\]\w\[\033[0m\]\n> '
+#PS1='\[\e[1;34m\]\u\[\e[m\] \[\e[1;36m\]\W\[\e[m\] \[\e[1;34m\]\$\[\e[m\] '

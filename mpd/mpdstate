@@ -1,0 +1,104 @@
+sw_volume: 75
+audio_device_state:1:default detected output
+state: stop
+current: 58
+random: 0
+repeat: 1
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: nan
+playlist_begin
+0:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_01_-_-listen_to_my_story-.mp3
+1:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_02_-_zanarkand.mp3
+2:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_03_-_prelude.mp3
+3:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_04_-_tidus's_theme.mp3
+4:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_05_-_otherworld.mp3
+5:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_06_-_run!!.mp3
+6:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_07_-_this_is_your_story.mp3
+7:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_08_-_creep.mp3
+8:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_09_-_battle_theme.mp3
+9:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_10_-_victory_fanfare.mp3
+10:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_11_-_game_over.mp3
+11:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_12_-_out_of_the_frying_pan.mp3
+12:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_13_-_leap_in_the_dark.mp3
+13:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_14_-_underwater_ruins.mp3
+14:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_15_-_oui_are_al_bhed.mp3
+15:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_16_-_enemy_attack.mp3
+16:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_17_-_the_blitzers.mp3
+17:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_18_-_besaid.mp3
+18:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_19_-_spira_unplugged.mp3
+19:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_20_-_hymn_of_the_fayth.mp3
+20:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_21_-_phantoms.mp3
+21:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_22_-_the_trials.mp3
+22:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_23_-_hymn_of_the_fayth_-_valefor.mp3
+23:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_24_-_the_summoning.mp3
+24:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_25_-_braska's_daughter.mp3
+25:Final Fantasy X/Disc 1/final_fantasy_x_original_soundtrack_-_disc_1_-_26_-_good_night.mp3
+26:Final Fantasy X/Disc 2/final_fantasy_x_original_soundtrack_-_disc_2_-_01_-_yuna's_theme.mp3
+27:Final Fantasy X/Disc 2/final_fantasy_x_original_soundtrack_-_disc_2_-_02_-_movement_in_green.mp3
+28:Final Fantasy X/Disc 2/final_fantasy_x_original_soundtrack_-_disc_2_-_03_-_the_sending.mp3
+29:Final Fantasy X/Disc 2/final_fantasy_x_original_soundtrack_-_disc_2_-_04_-_calm_before_the_storm.mp3
+30:Final Fantasy X/Disc 2/final_fantasy_x_original_soundtrack_-_disc_2_-_05_-_hymn_of_the_fayth_-_ifrit.mp3
+31:Final Fantasy X/Disc 2/final_fantasy_x_original_soundtrack_-_disc_2_-_06_-_luca.mp3
+32:Final Fantasy X/Disc 2/final_fantasy_x_original_soundtrack_-_disc_2_-_07_-_grand_maester_mika.mp3
+33:Final Fantasy X/Disc 2/final_fantasy_x_original_soundtrack_-_disc_2_-_08_-_decision_on_the_dock.mp3
+34:Final Fantasy X/Disc 2/final_fantasy_x_original_soundtrack_-_disc_2_-_09_-_the_splendid_performance.mp3
+35:Final Fantasy X/Disc 2/final_fantasy_x_original_soundtrack_-_disc_2_-_10_-_face_off.mp3
+36:Final Fantasy X/Disc 2/final_fantasy_x_original_soundtrack_-_disc_2_-_11_-_blitz_off!.mp3
+37:Final Fantasy X/Disc 2/final_fantasy_x_original_soundtrack_-_disc_2_-_12_-_auron's_theme.mp3
+38:Final Fantasy X/Disc 2/final_fantasy_x_original_soundtrack_-_disc_2_-_13_-_mi'ihen_highroad.mp3
+39:Final Fantasy X/Disc 2/final_fantasy_x_original_soundtrack_-_disc_2_-_14_-_chocobo_jam.mp3
+40:Final Fantasy X/Disc 2/final_fantasy_x_original_soundtrack_-_disc_2_-_15_-_the_travel_agency.mp3
+41:Final Fantasy X/Disc 2/final_fantasy_x_original_soundtrack_-_disc_2_-_16_-_they_may_pass.mp3
+42:Final Fantasy X/Disc 2/final_fantasy_x_original_soundtrack_-_disc_2_-_17_-_seymour's_theme.mp3
+43:Final Fantasy X/Disc 2/final_fantasy_x_original_soundtrack_-_disc_2_-_18_-_twilight.mp3
+44:Final Fantasy X/Disc 2/final_fantasy_x_original_soundtrack_-_disc_2_-_19_-_djose_temple.mp3
+45:Final Fantasy X/Disc 2/final_fantasy_x_original_soundtrack_-_disc_2_-_20_-_hymn_of_the_fayth_-_ixion.mp3
+46:Final Fantasy X/Disc 2/final_fantasy_x_original_soundtrack_-_disc_2_-_21_-_ridess_the_shoopuf-.mp3
+47:Final Fantasy X/Disc 2/final_fantasy_x_original_soundtrack_-_disc_2_-_22_-_rikku's_theme.mp3
+48:Final Fantasy X/Disc 2/final_fantasy_x_original_soundtrack_-_disc_2_-_23_-_guadosalam.mp3
+49:Final Fantasy X/Disc 3/final_fantasy_x_original_soundtrack_-_disc_3_-_01_-_thunder_plains.mp3
+50:Final Fantasy X/Disc 3/final_fantasy_x_original_soundtrack_-_disc_3_-_02_-_jecht's_theme.mp3
+51:Final Fantasy X/Disc 3/final_fantasy_x_original_soundtrack_-_disc_3_-_03_-_macalania_woods.mp3
+52:Final Fantasy X/Disc 3/final_fantasy_x_original_soundtrack_-_disc_3_-_04_-_the_void.mp3
+53:Final Fantasy X/Disc 3/final_fantasy_x_original_soundtrack_-_disc_3_-_05_-_the_temple_players.mp3
+54:Final Fantasy X/Disc 3/final_fantasy_x_original_soundtrack_-_disc_3_-_06_-_seymour's_ambition.mp3
+55:Final Fantasy X/Disc 3/final_fantasy_x_original_soundtrack_-_disc_3_-_07_-_hymn_of_the_fayth_-_shiva.mp3
+56:Final Fantasy X/Disc 3/final_fantasy_x_original_soundtrack_-_disc_3_-_08_-_pursuit.mp3
+57:Final Fantasy X/Disc 3/final_fantasy_x_original_soundtrack_-_disc_3_-_09_-_the_burning_sands.mp3
+58:Final Fantasy X/Disc 3/final_fantasy_x_original_soundtrack_-_disc_3_-_10_-_peril.mp3
+59:Final Fantasy X/Disc 3/final_fantasy_x_original_soundtrack_-_disc_3_-_11_-_the_revealed_truth.mp3
+60:Final Fantasy X/Disc 3/final_fantasy_x_original_soundtrack_-_disc_3_-_12_-_launch.mp3
+61:Final Fantasy X/Disc 3/final_fantasy_x_original_soundtrack_-_disc_3_-_13_-_the_wedding.mp3
+62:Final Fantasy X/Disc 3/final_fantasy_x_original_soundtrack_-_disc_3_-_14_-_assault.mp3
+63:Final Fantasy X/Disc 3/final_fantasy_x_original_soundtrack_-_disc_3_-_15_-_tragedy.mp3
+64:Final Fantasy X/Disc 3/final_fantasy_x_original_soundtrack_-_disc_3_-_16_-_believe.mp3
+65:Final Fantasy X/Disc 3/final_fantasy_x_original_soundtrack_-_disc_3_-_17_-_via_purifico.mp3
+66:Final Fantasy X/Disc 3/final_fantasy_x_original_soundtrack_-_disc_3_-_18_-_hymn_of_the_fayth_-_bahamut.mp3
+67:Final Fantasy X/Disc 3/final_fantasy_x_original_soundtrack_-_disc_3_-_19_-_moment_of_truth.mp3
+68:Final Fantasy X/Disc 3/final_fantasy_x_original_soundtrack_-_disc_3_-_20_-_patricide.mp3
+69:Final Fantasy X/Disc 3/final_fantasy_x_original_soundtrack_-_disc_3_-_21_-_suteki_da_ne.mp3
+70:Final Fantasy X/Disc 4/final_fantasy_x_original_soundtrack_-_disc_4_-_01_-_yuna's_decision.mp3
+71:Final Fantasy X/Disc 4/final_fantasy_x_original_soundtrack_-_disc_4_-_02_-_lulu's_theme.mp3
+72:Final Fantasy X/Disc 4/final_fantasy_x_original_soundtrack_-_disc_4_-_03_-_bravely_forward.mp3
+73:Final Fantasy X/Disc 4/final_fantasy_x_original_soundtrack_-_disc_4_-_04_-_hymn_of_the_fayth_-_yojimbo.mp3
+74:Final Fantasy X/Disc 4/final_fantasy_x_original_soundtrack_-_disc_4_-_05_-_servants_of_the_mountain.mp3
+75:Final Fantasy X/Disc 4/final_fantasy_x_original_soundtrack_-_disc_4_-_06_-_hymn_of_the_fayth_-_the_ronso.mp3
+76:Final Fantasy X/Disc 4/final_fantasy_x_original_soundtrack_-_disc_4_-_07_-_wandering.mp3
+77:Final Fantasy X/Disc 4/final_fantasy_x_original_soundtrack_-_disc_4_-_08_-_a_fleeting_dream.mp3
+78:Final Fantasy X/Disc 4/final_fantasy_x_original_soundtrack_-_disc_4_-_09_-_hymn_of_the_fayth_-_yunalesca.mp3
+79:Final Fantasy X/Disc 4/final_fantasy_x_original_soundtrack_-_disc_4_-_10_-_challenge.mp3
+80:Final Fantasy X/Disc 4/final_fantasy_x_original_soundtrack_-_disc_4_-_11_-_beyond_the_darkness.mp3
+81:Final Fantasy X/Disc 4/final_fantasy_x_original_soundtrack_-_disc_4_-_12_-_gloom.mp3
+82:Final Fantasy X/Disc 4/final_fantasy_x_original_soundtrack_-_disc_4_-_13_-_hymn_of_the_fayth_-_spira.mp3
+83:Final Fantasy X/Disc 4/final_fantasy_x_original_soundtrack_-_disc_4_-_14_-_the_unsent_laugh.mp3
+84:Final Fantasy X/Disc 4/final_fantasy_x_original_soundtrack_-_disc_4_-_15_-_fight_with_seymour.mp3
+85:Final Fantasy X/Disc 4/final_fantasy_x_original_soundtrack_-_disc_4_-_16_-_hymn_of_the_fayth_-_anima.mp3
+86:Final Fantasy X/Disc 4/final_fantasy_x_original_soundtrack_-_disc_4_-_17_-_a_contest_of_aeons.mp3
+87:Final Fantasy X/Disc 4/final_fantasy_x_original_soundtrack_-_disc_4_-_18_-_final_battle.mp3
+88:Final Fantasy X/Disc 4/final_fantasy_x_original_soundtrack_-_disc_4_-_19_-_ending_theme.mp3
+89:Final Fantasy X/Disc 4/final_fantasy_x_original_soundtrack_-_disc_4_-_20_-_-never_forget_them-.mp3
+90:Final Fantasy X/Disc 4/final_fantasy_x_original_soundtrack_-_disc_4_-_21_-_suteki_da_ne_(orchestra_version).mp3
+playlist_end

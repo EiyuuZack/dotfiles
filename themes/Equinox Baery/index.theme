@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.1
+Encoding=UTF-8
+Name=Equinox Baery
+Type=X-GNOME-Metatheme
+Comment=Equinox Baery: based on Equinox Variance, elementary, and Equinox Evolution Squared.
+Name[en_US]=Equinox Baery
+
+[X-GNOME-Metatheme]
+GtkTheme=Equinox Baery
+MetacityTheme=Equinox Evolution Squared
+IconTheme=elementary-monochrome
+CursorTheme=DMZ-White

@@ -1,0 +1,9 @@
+### /home/zack/.gitignore-boilerplates/Global/vim.gitignore
+
+*.s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+

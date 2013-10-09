@@ -1,0 +1,64 @@
+! Set mouse cursor ----------
+
+!Xcursor.theme: PolarCursorTheme
+Xcursor.theme: OpenZone_Black
+
+! Xft settings ----------
+
+! Xft.dpi:            96
+! Xft.antialias:      true
+! Xft.rgba:           rgb
+! Xft.autohint:       false
+! Xft.hinting:        true
+! Xft.hintstyle:      hintslight
+! Xft.lcdfilter:      lcddefault
+
+! URxvt class settings ----------
+
+URxvt.scrollBar: false
+URxvt.pointerBlank: true
+! URxvt.font: xft:Inconsolata:medium:size=12
+! URxvt.boldFont: xft:Inconsolata:bold:size=12
+! URxvt.font: xft:Source Code Pro:antialias=false
+! URxvt.boldFont: xft:Source Code Pro:bold:antialias=false
+URxvt.font: 9x15
+URxvt.boldFont: 9x15bold
+URxvt.buffered: true
+URxvt.background: #1c1c1c
+!URxvt.background: #262524
+!URxvt.background: #3d352a
+URxvt.foreground: white
+URxvt.pointerColor: black
+URxvt.pointerColor2: white
+URxvt.cursorColor: white
+URxvt.cursorBlink: true
+URxvt.termName: rxvt-unicode
+URxvt.iconFile: /usr/share/icons/Faenza/apps/scalable/terminal.svg
+!URxvt.imLocale: pt_PT.UTF-8
+!URxvt.loginShell: true
+URxvt.saveLines: 8192
+URxvt.fading: 40
+
+! Per. extensions ----------
+
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.matcher.button: 1
+URxvt.colorUL: #E11D33
+! URxvt.tabbed.tabbar-fg: 8
+! URxvt.tabbed.tabbar-bg: 0
+! URxvt.tabbed.tab-fg:    5
+! URxvt.tabbed.tab-bg:    0
+
+! terminal apps icons ----------
+
+htop*iconFile: /usr/share/icons/Faenza/apps/scalable/utilities-system-monitor.svg
+mplayer*iconFile: /usr/share/icons/Faenza/apps/scalable/mplayer.svg
+ncmpcpp*iconFile: /usr/share/icons/Faenza/apps/scalable/gnome-sound-recorder.svg
+rtorrent*iconFile: /usr/share/icons/Faenza/apps/scalable/defcon.svg
+vim*iconFile: /usr/share/icons/Faenza/apps/scalable/vim.svg
+wicd*iconFile: /usr/share/icons/Faenza/apps/scalable/radiotray.svg
+
+! terminal colours ----------
+
+#include "/home/zack/.terminal_files/librec00kiez"

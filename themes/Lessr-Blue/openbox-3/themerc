@@ -1,0 +1,75 @@
+! vim:enc=utf-8:nu:ai:si:et:ts=4:sw=4:ft=xdefaults:
+
+!! A minimalist theme for keyboard-centric openbox configs
+!! Thayer Williams (thayerw@gmail.com)
+!! http://cinderwick.ca
+
+!! For optimal settings:
+!!  remove all Window Titles (e.g., NLIMCSD)
+!!  reduce Window Title font size to 2
+
+
+!! dominant color
+
+window.active.border.color:     #0000ff
+window.active.title.bg.color:   #0000ff
+menu.items.active.bg.color:     #0000ff
+osd.hilight.bg.color:           #0000ff
+
+
+!! window settings 
+
+border.width: 1
+
+window.inactive.border.color:   #333333
+window.inactive.title.bg.color: #333333
+
+window.active.title.bg:         solid flat
+window.inactive.title.bg:       solid flat
+
+padding.width:                  0
+padding.height:                 0
+window.client.padding.width:    0
+window.client.padding.height:   0
+window.handle.width:            0
+
+
+!! menus
+
+menu.overlap.x:                 0
+menu.border.width:              0
+menu.border.color:              #000000
+menu.title.bg:                  solid flat
+menu.title.bg.color:            #1a1a1a
+menu.title.text.color:          #ffffff
+menu.title.text.justify:        left
+
+menu.items.bg:                  solid flat
+menu.items.bg.color:            #1a1a1a
+menu.items.text.color:          #888888
+
+menu.items.disabled.text.color: #666666
+menu.bullet.image.color:        #000000
+menu.bullet.selected.image.color: #ffffff
+
+menu.items.active.bg:           solid flat 
+menu.items.active.text.color:   #ffffff
+
+
+!! prompt buttons
+window.active.button.unpressed.image.color: #777777
+window.active.button.pressed.image.color:   #ffffff
+window.active.button.hover.image.color:     #ffffff
+
+
+!! osd
+
+osd.bg:                         solid flat
+osd.bg.color:                   #000000
+osd.border.color:               #000000
+osd.border.width:               8
+osd.hilight.bg:                 solid flat
+osd.unhilight.bg:               solid flat
+osd.unhilight.bg.color:         #ffffff
+osd.label.text.color:           #ffffff
+

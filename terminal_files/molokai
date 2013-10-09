@@ -1,0 +1,44 @@
+! molokai inspired colors // thayer ----------
+
+*foreground:#a0a0a0
+*background:#181818
+
+! black ----------
+
+*color0:    #181818
+*color8:    #505354
+
+! red ----------
+
+*color1:    #ED0F32
+*color9:    #DD314C
+
+! green ----------
+
+*color2:    #407B2A
+*color10:   #60954B
+
+! yellow ----------
+
+*color3:    #fd971f
+*color11:   #feed6c
+
+! blue ----------
+
+*color4:    #13439A
+*color12:   #2A426D
+
+! magenta ----------
+
+*color5:    #67479A
+*color13:   #534569
+
+! cyan ----------
+
+*color6:    #1F8DA5
+*color14:   #468997
+
+! white ----------
+
+*color7:    #ccccc6
+*color15:   #f8f8f2

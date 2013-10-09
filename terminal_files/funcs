@@ -1,0 +1,51 @@
+#!/bin/bash
+
+# display Arch Linux logo and a random quote on top of every new shell
+function welcome() {
+	local qdb="$HOME/.terminal_files/archquotes" # quotes database
+	local arch="Arch" nix="Linux" # the logo
+	local say="$(shuf -n1 $qdb)"  # pick a random quote
+	local spc="$(( $(tput cols) - ${#arch} - ${#nix} ))"
+	#clear						  # ohai, kthxbye
+	printf "$mkbold$fgwht%s$bfgblu%s$fgwht%${spc}s$normal\n" "$arch" "$nix" "$say"
+}
+
+# cd helper
+function goto() {
+	[ -d "$1" ] && cd "$1" || cd "$(dirname "$1")";
+}
+
+# copy and follow
+function cpf() {
+	cp -v "$@" && goto "$_";
+}
+
+# move and follow
+function mvf() {
+	mv -v "$@" && goto "$_";
+}
+
+# makes directory and moves into it
+# no need for goto because it surely exists
+# after being created duh
+function mkcdir() {
+	mkdir -pv "$1" && cd "$_";
+}
+
+#find and list processes matching a case-insensitive partial-match string
+fp () {
+        ps -Ao pid,comm|awk '{match($0,/[^\/]+$/); print substr($0,RSTART,RLENGTH)": "$1}'|grep -i $1|grep -v grep
+}
+
+# build menu to kill process
+fk () {
+        IFS=$'\n'
+        PS3='Kill which process? '
+        select OPT in $(fp $1) "Cancel"; do
+                if [ $OPT != "Cancel" ]; then
+                        kill $(echo $OPT|awk '{print $NF}')
+                fi
+                break
+        done
+        unset IFS
+}

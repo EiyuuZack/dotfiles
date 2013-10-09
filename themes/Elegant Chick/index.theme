@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Elegant Chick
+Comment=This theme is a mod of Elegant Brit (which was a mod of Elegant One, by Dzakusek, which was a mod of Black-White, by Lyrae).
+Comment=Written by rieko
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Elegant Chick
+MetacityTheme=Elegant Chick
+IconTheme=Elegant Chick
+ButtonLayout=close,minimize,maximize:
+BackgroundImage=/usr/share/backgrounds/elegantchick-ubuntu/elegantchick-ubuntu.xml
+BackgroundColor=#262729
+GraphicalThemedColor=#262729

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+<menu id="apps-term-menu" label="Terminals">
+  <item label="Urxvt">
+    <action name="Execute">
+      <command>urxvt</command>
+    </action>
+  </item>
+  <!--
+  <item label="Xterm">
+    <action name="Execute"><command>xterm</command></action>
+  </item>
+  -->
+</menu>
+
+<menu id="apps-net-menu" label="Browsers">
+  <!--
+  <item label="Chromium">
+    <action name="Execute">
+      <command>chromium</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  -->
+  <item label="Firefox">
+    <action name="Execute">
+      <command>firefox</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-dev-menu" label="Development">
+  <item label="Eclipse">
+    <action name="Execute">
+      <command>eclipse</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <!--
+  <item label="VirtualBox">
+    <action name="Execute">
+      <command>VirtualBox</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Windows">
+    <action name="Execute">
+      <command>VBoxManage startvm "XP"</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  -->
+</menu>
+
+<menu id="apps-email-menu" label="Email">
+  <item label="Thunderbird">
+    <action name="Execute">
+      <command>thunderbird</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-fileman-menu" label="File Managers">
+  <item label="Thunar">
+    <action name="Execute">
+      <command>Thunar</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+<menu id="apps-chat-menu" label="Chat">
+  <!--
+  <item label="Emesene">
+    <action name="Execute">
+      <command>emesene</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  -->
+  <item label="Skype">
+    <action name="Execute">
+      <command>skype</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+</menu>
+
+
+<menu id="apps-graphics-menu" label="Graphics">
+  <!--
+  <item label="Gcolor2">
+    <action name="Execute">
+      <command>gcolor2</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  -->
+  <item label="Gimp">
+    <action name="Execute">
+      <command>gimp</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="Inkscape">
+    <action name="Execute">
+      <command>inkscape</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <!--
+  <item label="Pencil">
+    <action name="Execute">
+      <command>evolus-pencil</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  <item label="yEd">
+    <action name="Execute">
+      <command>yed</command>
+      <startupnotify>
+        <enabled>yes</enabled>
+      </startupnotify>
+    </action>
+  </item>
+  -->
+</menu>
+
+<menu id="system-menu" label="System">
+  <item label="Openbox Configuration Manager">
+    <action name="Execute">
+      <command>obconf</command>
+      <startupnotify><enabled>yes</enabled></startupnotify>
+    </action>
+  </item>
+  <item label="Reconfigure Openbox">
+    <action name="Reconfigure" />
+  </item>
+</menu>
+
+<menu id="root-menu" label="Openbox 3">
+  <separator label="Applications" />
+  <menu id="apps-net-menu"/>
+  <!--
+  <menu id="apps-chat-menu"/>
+  -->
+  <menu id="apps-dev-menu"/>
+  <!--
+  <menu id="apps-email-menu"/>
+  -->
+  <menu id="apps-fileman-menu"/>
+  <menu id="apps-graphics-menu"/>
+  <menu id="apps-term-menu"/>
+  <separator label="Devices" />
+  <!-- From obdevicemenu -->
+  <menu id="devices" label="Devices" execute="/usr/bin/obdevicemenu" />
+  <separator label="System" />
+  <menu id="system-menu"/>
+  <separator />
+  <item label="Log Out">
+    <action name="Exit">
+      <prompt>yes</prompt>
+    </action>
+  </item>
+</menu>
+
+</openbox_menu>

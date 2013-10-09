@@ -1,0 +1,45 @@
+1.1
+===
+* Metacity theme replaced by Equinox Evolution Squared by Matthieu James.
+
+1.0
+===
+* Metacity theme replaced by the Metacity theme from Equinox Light Glass by Matthieu James.
+
+0.9
+===
+* Fixed: Dependency for Equinox Radiance removed. Theme now uses it's own copy of the Metacity theme.
+
+0.8
+===
+* Added Equinox Baery Cy3: A green version of Equinox Baery.
+
+0.7
+===
+* Scrollbar style from elementary GTK applied to sidepane.
+
+0.6
+===
+* Equinox specific options were missing from gtkrc, resulting in unpredictable styles.
+* Background image applied to the gnome-panel.
+
+0.5
+===
+* Changed the appearance of the sidebar.
+
+0.4
+===
+* Added support for breadcrumbs in the toolbar (requires nautilus-elementary).
+* Fixed: The separator for the sidepane didn't display correctly.
+
+0.3
+===
+* Fixed: Main menu still appeared black.
+
+0.2
+===
+* Changed colors of tooltips.
+
+0.1
+===
+* Initial version.
