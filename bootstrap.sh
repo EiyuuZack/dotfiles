@@ -1,11 +1,14 @@
 #!/bin/sh
 
-for entry in $HOME/dotfiles ; do
-  ln -s $entry "$HOME/.$entry"
+for target in $HOME/dotfiles/* ; do
+  name="${target##*/}" # extract filename
+  link="$HOME/.$name"
+  [ -e "$link" ] && echo "$link exists, skipping..." && continue
+  ln -sv "$target" "$link"
 done
-unset entry
+unset target
 
-rm $HOME/.bootstrap.sh # unwanted file
+rm -v $HOME/.bootstrap.sh $HOME/.paclist # unwanted files
 
 cd $HOME/dotfiles
 

@@ -12,7 +12,8 @@ shopt -s checkwinsize
 
 [[ -d $HOME/.bash/aliases ]] && . $HOME/.bash/aliases
 
-for file in $HOME/.bash/completions ; do
+for file in $HOME/.bash/completions/* ; do
+  [ -e "$file" ] || continue
   . $file
 done
 unset file
