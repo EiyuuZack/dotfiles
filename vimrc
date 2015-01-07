@@ -239,6 +239,9 @@ set pastetoggle=<F2>
 " Toggle NERDtree
 nmap <silent> ,n :NERDTreeToggle<CR>
 
+" Toggle spell check
+nmap <silent> ,c :set spell!<CR>
+
 
 "-----------------------------------------------------------------------------"
 "     PLUGINS
@@ -271,12 +274,15 @@ let g:tex_flavor='latex'
 let g:Tex_DefaultTargetFormat='pdf'
 
 " Set default pdf viewer
-let g:Tex_ViewRule_pdf='zathura'
+let g:Tex_ViewRule_pdf='xdg-open'
+
+" Don't Want Spell Checking In Comments?
+let g:tex_comment_nospell= 1
 
 " Ruby configuration
 
 " Enable folds...
-:let ruby_fold=1
+let ruby_fold=1
 
 " ...but not on comments
-:let ruby_no_comment_fold=1
+let ruby_no_comment_fold=1

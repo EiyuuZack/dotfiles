@@ -22,6 +22,7 @@
         ci = commit
         st = status
         df = diff
+        wd = diff --color-words
         br = branch
         us = reset HEAD
         um = checkout --
